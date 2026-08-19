@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSecOps Pipeline Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>DevSecOps Platform</h1>
+            <p>Secure Software Delivery Dashboard</p>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            Pipeline Online
+        </div>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2>Pipeline Overview</h2>
+            <p>Monitor your software delivery pipeline from development to deployment.</p>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Build</h3>
+                <div class="icon">✓</div>
+                <p class="success">Passed</p>
+                <span>Latest build successful</span>
+            </div>
+
+            <div class="card">
+                <h3>Testing</h3>
+                <div class="icon">✓</div>
+                <p class="success">Passed</p>
+                <span>All tests completed</span>
+            </div>
+
+            <div class="card">
+                <h3>Security Scan</h3>
+                <div class="icon">✓</div>
+                <p class="success">Secure</p>
+                <span>No critical issues</span>
+            </div>
+
+            <div class="card">
+                <h3>Docker</h3>
+                <div class="icon">✓</div>
+                <p class="success">Running</p>
+                <span>Container active</span>
+            </div>
+
+        </section>
+
+        <section class="pipeline">
+
+            <h2>Deployment Pipeline</h2>
+
+            <div class="pipeline-flow">
+
+                <div class="pipeline-step">
+                    <div class="circle">1</div>
+                    <strong>Code</strong>
+                    <span>Git Repository</span>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="pipeline-step">
+                    <div class="circle">2</div>
+                    <strong>Build</strong>
+                    <span>Application Build</span>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="pipeline-step">
+                    <div class="circle">3</div>
+                    <strong>Test</strong>
+                    <span>Automated Tests</span>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="pipeline-step">
+                    <div class="circle">4</div>
+                    <strong>Security</strong>
+                    <span>Security Scan</span>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="pipeline-step">
+                    <div class="circle">5</div>
+                    <strong>Deploy</strong>
+                    <span>Docker Deployment</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="details">
+
+            <div class="detail-box">
+                <h2>Latest Commit</h2>
+                <p><strong>Initial project structure</strong></p>
+                <span>Git version control active</span>
+            </div>
+
+            <div class="detail-box">
+                <h2>Security Status</h2>
+                <p class="success">System Secure</p>
+                <span>Automated security monitoring enabled</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>DevSecOps Pipeline for Secure Software Delivery Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

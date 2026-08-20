@@ -1,0 +1,26 @@
+services:
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: devsecops-backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://devsecops:password@database:5432/devsecops
+    depends_on:
+      - database
+
+  database:
+    image: postgres:16
+    container_name: devsecops-database
+    environment:
+      POSTGRES_USER: devsecops
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: devsecops
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
